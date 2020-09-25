@@ -1,0 +1,29 @@
+{% extends 'registration/base.html'%}
+{% block child_block %}
+<html>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar w/ text</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/update">update profile<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/view">view profile</a>
+      </li>
+    </ul>
+      <span>Hello,{{ request.user }},</span>
+      <span><a href="/logout">logout</a> </span>
+    </span>
+  </div>
+</nav>
+<h1><strong><font color="black">WELCOME TO MY WEBSITE</font></strong></h1>
+<h2><strong><i><font color="green"> THIS IS AKASH</font></i></strong></h2>
+      <h3><strong><u><big><font color="platinum" >PYTHON FULL STACK DEVELOPER</font></big></u></strong></h3>
+</body>
+</html>
+{% endblock %}
